@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02944542298C5D0E00E6C0B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02944541298C5D0E00E6C0B3 /* DetailViewController.swift */; };
 		0CFCE0472948A11B00F0B620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCE0462948A11B00F0B620 /* AppDelegate.swift */; };
 		0CFCE0492948A11B00F0B620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCE0482948A11B00F0B620 /* SceneDelegate.swift */; };
 		0CFCE04B2948A11B00F0B620 /* GuesserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCE04A2948A11B00F0B620 /* GuesserViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0294453D298C5C9000E6C0B3 /* DGStarter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGStarter-Bridging-Header.h"; sourceTree = "<group>"; };
+		02944541298C5D0E00E6C0B3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0CFCE0432948A11B00F0B620 /* DGStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFCE0462948A11B00F0B620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CFCE0482948A11B00F0B620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +65,12 @@
 				0CFCE0482948A11B00F0B620 /* SceneDelegate.swift */,
 				0CFCE05A2948A17500F0B620 /* Dinosaur.swift */,
 				0CFCE04A2948A11B00F0B620 /* GuesserViewController.swift */,
+				02944541298C5D0E00E6C0B3 /* DetailViewController.swift */,
 				0CFCE04C2948A11B00F0B620 /* Main.storyboard */,
 				0CFCE04F2948A11C00F0B620 /* Assets.xcassets */,
 				0CFCE0512948A11C00F0B620 /* LaunchScreen.storyboard */,
 				0CFCE0542948A11C00F0B620 /* Info.plist */,
+				0294453D298C5C9000E6C0B3 /* DGStarter-Bridging-Header.h */,
 			);
 			path = DGStarter;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				TargetAttributes = {
 					0CFCE0422948A11B00F0B620 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -143,6 +149,7 @@
 			files = (
 				0CFCE04B2948A11B00F0B620 /* GuesserViewController.swift in Sources */,
 				0CFCE0472948A11B00F0B620 /* AppDelegate.swift in Sources */,
+				02944542298C5D0E00E6C0B3 /* DetailViewController.swift in Sources */,
 				0CFCE05B2948A17500F0B620 /* Dinosaur.swift in Sources */,
 				0CFCE0492948A11B00F0B620 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,6 +315,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maribelmontejano.DGStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DGStarter/DGStarter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maribelmontejano.DGStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DGStarter/DGStarter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

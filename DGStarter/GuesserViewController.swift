@@ -25,13 +25,35 @@ class GuesserViewController: UIViewController {
 
         // Store Dinosaur models
         dinosaurs = [gallimimus, stegosaurus, tyrannosaurus, brachiosaurus]
+        
+        }
 
-        print("Here are the different dinosaurs:")
-        for dinosaur in dinosaurs {
-            print(dinosaur)
+    
+
+@IBAction func didTapDinosaur(_ sender: UITapGestureRecognizer) {
+        if let tappedView = sender.view {
+            performSegue(withIdentifier: "detailSegue", sender: tappedView)
         }
     }
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+    if segue.identifier == "detailSegue",
+        let tappedView = sender as? UIView,
+        let detailViewController = segue.destination as? DetailViewController {
 
+        if tappedView.tag == 0 {
+            detailViewController.dinosaur = dinosaurs[0]
+        } else if tappedView.tag == 1 {
+            detailViewController.dinosaur = dinosaurs[1]
+        } else if tappedView.tag == 2 {
+            detailViewController.dinosaur = dinosaurs[2]
+        } else if tappedView.tag == 3 {
+            detailViewController.dinosaur = dinosaurs[3]
+        } else {
+            print("no Dinosaur was tapped, please check your selection.")
+        }
+    }
+    }
+    
 }
 
